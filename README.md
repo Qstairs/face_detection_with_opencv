@@ -4,22 +4,29 @@ This module detects face with OpenCV DNN.
 
 ## Environment
 - OS: Ubuntu 18.04LTS (WSL2)
-- installed Python3.8
+- Python 3.8 and pipenv are installed
 
 ## Step
-1. setup
-2. test with sample data
-3. run with your data
+1. Setup
+2. Test with sample data
+3. Run with your data
 
-## setup
+## Setup
 
 ```shell
 sh setup.sh
-pip install opencv-python
+pipenv sync
 ```
 
-## test with sample data
+## Test with sample data
 
 ```shell
-sh 
+pipenv run python face_detection.py -i ./data/lena.jpg
 ```
+
+## Run with your data
+
+```shell
+pipenv run python face_detection.py -i {your data path}
+```
+You can use image data and video data.

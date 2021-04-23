@@ -108,13 +108,11 @@ if __name__ == "__main__":
     fd = FaceDetector(args.prototxt, args.model, args.threshold)
 
     _, ext = os.path.splitext(src)
-    src_mode = None
     if ext in IMAGE_EXT_LIST:
         image = cv2.imread(src)
         execute_image(fd, image, "./result/lena.jpg")
     elif ext in VIDEO_EXT_LIST:
         execute_video(fd, src, "./result")
-
-    if src_mode is None:
+    else:
         print("invalid input data.")
         exit()
