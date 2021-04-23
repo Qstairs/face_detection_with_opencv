@@ -24,6 +24,11 @@ pipenv sync
 pipenv run python face_detection.py -i ./data/lena.jpg
 ```
 
+<img src="https://github.com/Qstairs/face_detection_with_opencv/raw/main/data/lena.jpg" width="360">
+
+<img src="https://github.com/Qstairs/face_detection_with_opencv/raw/main/result/lena.jpg" width="360">
+
+
 ## Run with your data
 
 ```shell
